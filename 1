@@ -1,0 +1,15 @@
+cipher = input("start")
+
+plain =''
+for i in cipher:
+    if(ord(i) >=97 and ord(i) <=122):
+        if(ord(i)+2 > 122):
+            plain += chr(ord(i) - 24)
+        else:
+            plain += chr(ord(i) +2 )
+
+        else:
+          plain +=''
+
+
+print(plain)
